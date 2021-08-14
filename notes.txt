@@ -21,6 +21,9 @@
     python manage.py drf_create_token %admin%  // generating token for existing User (Username)
 
 
+
+
+
 3) GIT:
     git init
     git add .

@@ -8,6 +8,7 @@ authors = ["NeoVic2006 <NeoVic2006@gmail.com>"]
 python = "^3.9"
 
 [tool.poetry.dev-dependencies]
+Django = "^3.2.6"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

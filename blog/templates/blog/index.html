@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <htnk lang="eg">
 <head>
@@ -8,6 +6,11 @@
 </head>
 
 <body>
-    {{blogs_key}}
+    {% if blogs_key %}
+        {% for blog in blogs_key %}
+            <li><a href="{% url 'blog:blog_details' blog.id %}">{{ blog.title }}</a>  
+            {{blog.text}} </li>
+        {% endfor %}
+    {% endif %}
 </body>
 </html>

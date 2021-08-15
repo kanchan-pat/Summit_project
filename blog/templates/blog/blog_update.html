@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<htnk lang="eg">
+<head>
+    <meta charset="UTF-8">
+    <title>Create</title>
+</head>
+
+<body>
+    <form method="post">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit">Save</button>
+    </form>
+  
+</body>
+</html>

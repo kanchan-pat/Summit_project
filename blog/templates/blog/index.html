@@ -9,8 +9,9 @@
     {% if blogs_key %}
         {% for blog in blogs_key %}
             <li><a href="{% url 'blog:blog_details' blog.id %}">{{ blog.title }}</a>  
+                <a href="{% url 'blog:blog_update' blog.id %}">Edit</a>  
             {{blog.text}} </li>
         {% endfor %}
     {% endif %}
 </body>
-</html>
+</html>     

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<htnk lang="eg">
+    <head>
+        <meta charset="UTF-8">
+        <title>TITLE</title>
+    </head>
+
+    <body>
+        <a href="{% url 'store:list_category' %}">My Store</a>  
+        <br>Categories:</br>  
+
+        <br>{% if Category_key %}
+            {% for Category in Category_key %}
+                <li>{{ Category.name }}</li>
+            {% endfor %}
+        {% endif %}</br>  
+
+        <br>Products:</br>  
+
+        
+    </body>
+</html>     

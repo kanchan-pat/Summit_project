@@ -10,5 +10,5 @@ class Categories(models.Model):
     def __str__(self):
         return self.name
 
-class Products(models.Model):
+class Products(models.Model): 
     pass

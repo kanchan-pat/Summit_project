@@ -36,5 +36,8 @@ class CategoryCreate(generic.CreateView):
 
 class Product(generic.ListView):
     model = Products
-    template_name = 'store/all_products.html'
+    # Here we are not sending the extra context 'category_key' to the template and that's the reason why it's not displaying any categories.
+    # so Either a) send this extra context data 
+    # or b) send Categories only and use the Foreign key relation between Category and Products and get the related products in template 
+    template_name = 'store/all_products.html' 
     context_object_name = 'products_key'

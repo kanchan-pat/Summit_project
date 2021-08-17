@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<htnk lang="eg">
+<html>
     <head>
         <meta charset="UTF-8">
         <title>TITLE</title>
@@ -9,14 +9,17 @@
         <a href="{% url 'store:list_category' %}">My Store</a>  
         <br>Categories:</br>  
 
-        <br>{% if Category_key %}
-            {% for Category in Category_key %}
-                <li>{{ Category.name }}</li>
+        <br>{% if category_key %}
+            {% for category in category_key %}
+                <li>{{ category.name }}</li>
             {% endfor %}
         {% endif %}</br>  
 
         <br>Products:</br>  
 
+        {% block content %}
+        
+        {% endblock content %}
         
     </body>
 </html>     

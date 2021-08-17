@@ -8,9 +8,9 @@ class AppUser(models.Model):
 
 class Blog(models.Model):
     title = models.CharField(max_length=50, null=False)
-    text = models.CharField(max_length=2000)
-    create_date = models.DateField()
-    publication_date = models.DateField()
+    text = models.CharField(max_length=2000, blank=True)
+    create_date = models.DateField(auto_now=True)
+    publication_date = models.DateField(auto_now=True)
     author = models.ForeignKey(AppUser, on_delete=CASCADE, default=1)
 
     def __str__(self):

@@ -6,7 +6,7 @@
 </head>
 
 <body>
-    <form method="post" action="{% url 'blog:blog_create' %}">
+    <form method="post" action="{% url 'store:category_create' %}">
         {% csrf_token %}
         {{ form }}
         <button type="submit">Save</button>
